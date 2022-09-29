@@ -10,7 +10,7 @@ const changeImage = (e) => {
 };
 
 const openProduct = (e) => {
-  location.href = '../product/product.html';
+  location.href = './1-product/index.html';
 };
 
 const magnifyingImg = (e) => {
