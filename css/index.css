@@ -1,0 +1,97 @@
+.body {
+  margin: 0;
+  padding: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 0 0 #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card--product {
+  flex-direction: row;
+}
+.card__text {
+  margin: 0;
+  padding: 0;
+}
+.cards:hover .card__img {
+  transform: scale(1.5) rotate(0deg);
+}
+.cards:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(1.1);
+}
+.card__img {
+  display: block;
+  width: 200px;
+  transform: rotate(20deg);
+  transition: all 0.5s;
+  padding: 1rem 0;
+}
+.product__img {
+  display: block;
+  border: none;
+  width: 500px;
+  height: 390px;
+  background-image: url("../assets/img/img-white-600.webp");
+  background-size: cover;
+  /* transition: all 0.5s; */
+  background-repeat: no-repeat;
+}
+
+.product__img:hover {
+  background-image: url("../assets/img/img-white-1200.webp");
+  background-size: initial;
+  /* background-position-y: 0%; */
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 0.5rem;
+}
+.card__body--product {
+  padding: 0;
+}
+.card__description {
+  font-weight: 300;
+}
+.card__footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+.card__img--type {
+  width: 60px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  cursor: pointer;
+}
+
+.obs {
+  width: 100vw;
+  height: 100vh;
+}
